@@ -1,0 +1,68 @@
+.form {
+    background: $light-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__contact {
+        background: $white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 18px;
+        padding: 72px 68px;
+        margin: 122px 0;
+        width: 100%;
+        max-width: 1252px;
+        align-self: center;
+
+        &--title {
+            font-family: $font-secondary;
+            color: $dark-blue;
+            font-size: 36px;
+            font-weight: 700;
+            padding: 0 0 24px 0;
+        }
+
+        &--field {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-secondary;
+            padding: 16px 0;
+
+        }
+
+        .sendForm {
+            background-color: $violet;
+            font-family: "Mulish", sans-serif;
+            color: #fefefe;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid #fefefe;
+            border-radius: 8px;
+            padding: 14px 42px;
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        &__decoration {
+            background: $white;
+            &--img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        &__contact {
+            width: 100%;
+            max-width: 332px;
+
+            &--title {
+                font-size: 32px;
+            }
+        }
+    }
+}
